@@ -42,6 +42,30 @@ body{
     color: red;
     font-weight: 600;
 }
+
+.ss-container{
+    display: flex;
+    justify-content: space-between;
+}
+.sort-container{
+    margin: 10px;
+}
+.sorter{
+    padding: 5px;
+    font-size: medium;
+}
+.search-container{
+    text-align: right;
+}
+.search-input{
+    padding: 5px;
+    margin: 10px;
+    font-size: large;
+}
+.search-btn{
+    font-size: large;
+}
+
 .restaurantListing{
     margin-top: 2rem;
     display: flex;
