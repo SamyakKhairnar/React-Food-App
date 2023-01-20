@@ -1854,9 +1854,9 @@ const RestaurantCard = ({cloudinaryImageId,name,cuisines,deliveryTime}) => {
   return (
     <div className='restaurant-card'>
         <img src={'https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/' + cloudinaryImageId}></img>
-        <h2>{name}</h2>
-        <h3>{cuisines.join(", ")}</h3>
-        <h4>{deliveryTime} Mins</h4>
+        <h3 className='restro-name'>{name}</h3>
+        <h4 className='restro-details'>{cuisines.join(", ")}</h4>
+        <h5 className='restro-details'>{deliveryTime} Mins ETA</h5>
     </div>
   );
 };
@@ -1869,7 +1869,7 @@ export default function
 
         {
             restaurantList.map((restaurant) => {
-                return <RestaurantCard {...restaurant.data} />
+                return <RestaurantCard {...restaurant.data} key={restaurant.data.id} />
             })
         }
         
