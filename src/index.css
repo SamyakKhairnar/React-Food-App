@@ -58,16 +58,17 @@ body{
     text-align: right;
 }
 .search-input{
-    padding: 5px;
+    padding: 2px;
     margin: 10px;
     font-size: large;
 }
 .search-btn{
+    padding: 2px;
     font-size: large;
+    cursor: pointer;
 }
 
 .restaurantListing{
-    margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

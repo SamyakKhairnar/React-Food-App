@@ -3,7 +3,7 @@ import { useState } from "react";
 import '../index.css';
 
 function SearchSort() {
-  const [sort, setSort] = useState("Recommeded");
+  const [sort, setSort] = useState("Recommended");
 
   const handleChange = (event) => {
     setSort(event.target.value)
@@ -13,7 +13,7 @@ function SearchSort() {
       <div className='sort-container'>
       <form>
         <select className='sorter' value={sort} onChange={handleChange}>
-          <option value="Recommeded">Recommeded</option>
+          <option value="Recommended">Recommended</option>
           <option value="Name">Name</option>
           <option value="Nearby">Nearby</option>
         </select>
