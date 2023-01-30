@@ -1,7 +1,7 @@
 import React from 'react'
 import '../index.css';
 import { useState, useEffect } from 'react';
-import Shimmer from './Shimmer';
+
 
 const RESTAURANTLIST_URL = "https://www.swiggy.com/dapi/restaurants/list/v5?lat=20.9042201&lng=74.7748979&page_type=DESKTOP_WEB_LISTING";
 const RESTAURANT_IMG = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/";
@@ -1867,7 +1867,7 @@ const RestaurantCard = ({cloudinaryImageId,name,cuisines,deliveryTime}) => {
 };
 
 
-export default function () {
+function Body() {
 
   const [restaurantList,setRestaurantList] = useState([]);
 
@@ -1893,3 +1893,4 @@ export default function () {
     </div>
   )
 }
+export default Body;
