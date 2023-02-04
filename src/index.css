@@ -96,7 +96,7 @@ body{
 .restro-details{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    margin: 5px;
+    margin: 2px;
 }
 
 
@@ -145,3 +145,36 @@ body{
     .links .fa-brands:hover {
     color: red;
     }
+
+
+@media only screen and (max-width: 600px) {
+    .nav-container{
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .logo{
+        width: 30%;
+        padding: 2px;
+        margin: 1px;
+    }
+    .title{
+        font-size: xx-large;
+    }
+    .navigation{
+        margin: auto;
+        padding-inline-start: 0px;
+    }
+    .nav-menu{
+        font-size: larger;
+    }
+    .sort-container{
+        margin: auto;
+        margin-top: 5px;
+    }
+    .sorter{
+        padding: 0px;
+        font-size: small;
+    }
+
+}

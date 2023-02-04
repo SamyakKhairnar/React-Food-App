@@ -3,7 +3,7 @@ import '../index.css';
 import { useState, useEffect } from 'react';
 
 
-const RESTAURANTLIST_URL = "https://www.swiggy.com/dapi/restaurants/list/v5?lat=20.9042201&lng=74.7748979&page_type=DESKTOP_WEB_LISTING";
+const RESTAURANTLIST_URL = "https://www.swiggy.com/mapi/restaurants/list/v5?lat=20.9042201&lng=74.7748979&page_type=DESKTOP_WEB_LISTING";
 const RESTAURANT_IMG = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/";
 
 //https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/
@@ -1854,13 +1854,14 @@ const RESTAURANT_IMG = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,
 // ];
 
 
-const RestaurantCard = ({cloudinaryImageId,name,cuisines,deliveryTime}) => {
+const RestaurantCard = ({cloudinaryImageId,name,cuisines,deliveryTime,costForTwoString}) => {
   
   return (
     <div className='restaurant-card'>
         <img src={RESTAURANT_IMG + cloudinaryImageId}></img>
         <h3 className='restro-name'>{name}</h3>
         <h4 className='restro-details'>{cuisines.join(", ")}</h4>
+        <h4 className='restro-details'>{costForTwoString}</h4>
         <h5 className='restro-details'>{deliveryTime} Mins ETA</h5>
     </div>
   );
