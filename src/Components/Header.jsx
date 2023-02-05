@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../assets/logofoodapp.svg'
+import Logo from '../assets/logofoodapp.png'
 import '../index.css';
 
 
