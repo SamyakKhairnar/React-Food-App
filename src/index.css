@@ -152,29 +152,64 @@ body{
         width: 100%;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
     .logo{
-        width: 30%;
+        width: 25%;
         padding: 2px;
         margin: 1px;
     }
     .title{
-        font-size: xx-large;
-    }
+        font-size: x-large;
+        margin: 1px;
+    }    
     .navigation{
         margin: auto;
+        margin-top: 2px;
         padding-inline-start: 0px;
     }
     .nav-menu{
         font-size: larger;
     }
+    .ss-container{
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
     .sort-container{
         margin: auto;
-        margin-top: 5px;
     }
     .sorter{
         padding: 0px;
-        font-size: small;
+        font-size: medium;
+        width: 70%;
     }
-
+    .search-input{
+        padding: 0px;
+        margin: auto;
+        font-size: medium;
+        width: 50%;
+        margin-right: 2px;
+    }
+    .search-btn{
+        font-size: medium;
+        padding: 0px;
+    }
+    .restaurant-card{
+        margin: 5px;
+        padding: 0px;
+        width: 90%;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(33,33,33,.5);
+    }
+    .restaurant-card img{
+        width: 105%;
+    }
+    .restro-name{
+        margin: 2px;
+    }
+    .restro-details{
+        display: inline-flex;
+        margin: 5px;
+    }
 }

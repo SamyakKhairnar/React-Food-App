@@ -1858,7 +1858,7 @@ const RestaurantCard = ({cloudinaryImageId,name,cuisines,deliveryTime,costForTwo
   
   return (
     <div className='restaurant-card'>
-        <img src={RESTAURANT_IMG + cloudinaryImageId}></img>
+        <img className='restro-img' src={RESTAURANT_IMG + cloudinaryImageId}></img>
         <h3 className='restro-name'>{name}</h3>
         <h4 className='restro-details'>{cuisines.join(", ")}</h4>
         <h4 className='restro-details'>{costForTwoString}</h4>
