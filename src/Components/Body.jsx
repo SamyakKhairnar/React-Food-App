@@ -3,7 +3,7 @@ import '../index.css';
 import { useState, useEffect } from 'react';
 
 
-const RESTAURANTLIST_URL = "https://www.swiggy.com/mapi/restaurants/list/v5?lat=20.9042201&lng=74.7748979&page_type=DESKTOP_WEB_LISTING";
+const RESTAURANTLIST_URL = "https://corsanywhere.herokuapp.com/https://www.swiggy.com/mapi/restaurants/list/v5?lat=20.9042201&lng=74.7748979&page_type=DESKTOP_WEB_LISTING";
 const RESTAURANT_IMG = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/";
 
 //https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/
